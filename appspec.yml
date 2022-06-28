@@ -1,17 +1,17 @@
 version: 0.0
 os: linux
 files:
-  - source: TestAPI
+  - source: .
     destination: /var/www
   - source: deploy-scripts/website.service
     destination: /etc/systemd/system
 hooks:
     ApplicationStop:
-      - location: ../../../../../home/ec2-user/deploy-scripts/application_stop.sh
+      - location: ../../../../../../home/ec2-user/deploy-scripts/application_stop.sh
         timeout: 10
     BeforeInstall:
-      - location: ../../../../../home/ec2-user/deploy-scripts/before-install.sh
+      - location: ../../../../../../home/ec2-user/deploy-scripts/before-install.sh
         timeout: 10
     ApplicationStart:
-      - location: ../../../../../home/ec2-user/deploy-scripts/application_start.sh
+      - location: ../../../../../../home/ec2-user/deploy-scripts/application_start.sh
         timeout: 10
