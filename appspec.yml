@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: out
-    destination: /var/www
+    destination: /var/www/TestAPI
   - source: deploy-scripts/website.service
     destination: /etc/systemd/system
 hooks:
