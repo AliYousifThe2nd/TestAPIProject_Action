@@ -33,7 +33,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: me-south-1
       
-      - name: Publish
+      - name: Publishh
         run: dotnet publish -o ./out
 
       - name: Create CodeDeploy Deployment
