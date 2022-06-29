@@ -33,7 +33,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: me-south-1
 
-      - name: Create CodeDeploy Deployment
+      - name: Create CodeDeploy Deploymentt
         id: deploy
         run: |
           aws deploy create-deployment \
