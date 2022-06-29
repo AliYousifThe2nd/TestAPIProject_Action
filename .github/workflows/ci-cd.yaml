@@ -40,7 +40,7 @@ jobs:
           aws-region: me-south-1
       
       - name: Publish
-        run: dotnet publish -o ./out
+        run: dotnet publish
 
       - name: Create CodeDeploy Deployment
         id: deploy
