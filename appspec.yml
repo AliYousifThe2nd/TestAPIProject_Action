@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: out
-    destination: /var/www/TestAPI
+  - source: .
+    destination: /home/ec2-user/TestAPIProject
   - source: deploy-scripts/website.service
     destination: /etc/systemd/system
 hooks:
